@@ -1,0 +1,111 @@
+/* navbar style  */
+.navbar-toggler {
+    background-color: #fff;
+}
+.nav-link {
+    position: relative;
+margin-left: 15px;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    bottom: 0;
+    left: 0;
+    transition: width 1s;
+}
+li .active:after {
+    width: 100%;
+}
+/* home style  */
+.home-section{
+    background-image: url('../images/hero-bg.jpg');
+    background-attachment: fixed;
+background-size: cover;
+background-position: center;
+
+}
+.home-section h1{
+font-size: 4.5rem;
+}
+/* about style  */
+.about-txt{
+  position: relative;
+}
+.about-txt::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+width: 90px;
+    height: 3px;
+     background-color: #0078ff;
+}
+/* services style  */
+#services .title p,#portfolio .title p ,#blog .title p{
+ position: relative;
+}
+#services .title p::before , #portfolio .title p::before ,#blog .title p::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform:translateX(-50%) ;
+width: 45px;
+    height: 5px;
+        background-color: #0078ff;
+        margin-top: 10px;
+}
+.icon span{
+transition: all 500ms ease;
+border: 7px solid #0078ff;
+}
+.mainDiv:hover .icon span, .icon span:hover{
+   background-color:#0078ff ;
+    color: #fff;
+    border: #90c2fa solid 7px;
+}
+/* counter style  */
+#counter{
+    background-image: url("../images/counters-bg.jpg");
+    background-attachment: fixed;
+}
+/* portfolio style  */
+#portfolio img{
+transition: all 0.5s;
+}
+#portfolio img:hover{
+transform: scale(1.1);
+cursor: pointer;
+}
+/* slider style  */
+.slider, #form {
+    background-image: url("../images/overlay-bg.jpg");
+    background-attachment: fixed;
+}
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+/* blog style  */
+#blog .auther img{
+    width: 32px;
+    height: 32px;
+}
+#blog .card .badge{
+text-align: center;
+    top: -23px;
+    left: 15px;
+    right: 15px;
+    line-height: 25px;
+}
+#blog span:hover{
+color: rgb(57, 57, 227);
+}
+/* footer style  */
+#footer{
+background: #0062d3;
+border-top:rgba(0, 0,0,0.1) solid 3px;
+}
